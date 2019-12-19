@@ -1,0 +1,10 @@
+<%= simple_form_for @travel do |f| %>
+  <%= f.input :destination %>
+  <%= f.input :description %>
+  <%= f.input :price %>
+  <div class="travel_btn btn btn-success d-flex align-items-center">
+    <i class="fas fa-adjust"></i>
+    <%= f.button :submit, '' %>
+
+  </div>
+<% end %>

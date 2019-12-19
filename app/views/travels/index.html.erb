@@ -1,0 +1,8 @@
+<% @travels.each do |travel| %>
+  <%= travel.destination %>
+  <%= travel.description %>
+  <%= travel.price %>
+
+<%= link_to "destroy", travel_path(travel),method: :delete %>
+<%= link_to "edit", edit_travel_path(travel) %>
+<% end %>
